@@ -23,6 +23,14 @@
 
 ---
 
+## 📸 Screenshots
+
+| Home Screen | Add Product | Update Product |
+| :---: | :---: | :---: |
+| <img src="screenshots/home.PNG" width="250"> | <img src="screenshots/add.PNG" width="250"> | <img src="screenshots/update.PNG" width="250"> |
+
+---
+
 ## 🚧 Still In Progress
 
 - [ ] Full product detail page
@@ -38,7 +46,7 @@
 
 ## 🗂️ Project Structure
 
-```
+```text
 lib/
 ├── helper/
 │   └── api.dart                      # HTTP layer (GET / POST / PUT)
@@ -60,29 +68,3 @@ lib/
     ├── custom_text_filed.dart
     ├── custom_dropdown.dart
     └── cutom_button.dart
-```
-
----
-
-## 📦 Dependencies
-
-| Package | Purpose |
-|---|---|
-| `http` | Sending HTTP requests |
-| `flutter_screenutil` | Responsive screen sizing |
-| `modal_progress_hud_nsn` | Loading overlay indicator |
-| `font_awesome_flutter` | Icons |
-
----
-
-## 🔗 API
-
-[Fake Store API](https://fakestoreapi.com) — A free REST API for prototyping and development.
-
----
-
-## 👨‍💻 Developer
-
-**Mohamed Alaa**
-- GitHub: [github.com/moalaa125](https://github.com/moalaa125)
-- LinkedIn: [linkedin.com/in/mohamed-alaa-839738308](https://linkedin.com/in/mohamed-alaa-839738308)
