@@ -56,40 +56,43 @@ class _HomeState extends State<Home> {
       ),
       body: Stack(
         children: [
-          Padding(
-            padding: EdgeInsets.only(right: 10.w, left: 10.w, top: 80.h),
-            child: FutureBuilder<List<ProductModel>>(
-              future: futureProducts,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return Center(
-                    child: CircularProgressIndicator(color: Colors.black),
-                  );
-                } else if (snapshot.hasError) {
-                  return Center(
-                    child: Text('Oops! An error occurred: \n${snapshot.error}'),
-                  );
-                } else if (snapshot.hasData) {
-                  List<ProductModel> products = snapshot.data!;
+          FutureBuilder<List<ProductModel>>(
+            future: futureProducts,
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return Center(
+                  child: CircularProgressIndicator(color: Colors.black),
+                );
+              } else if (snapshot.hasError) {
+                return Center(
+                  child: Text('Oops! An error occurred: \n${snapshot.error}'),
+                );
+              } else if (snapshot.hasData) {
+                List<ProductModel> products = snapshot.data!;
 
-                  return GridView.builder(
-                    clipBehavior: Clip.none,
-                    itemCount: products.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio: 1.4,
-                      crossAxisSpacing: 20.w,
-                      mainAxisSpacing: 100.h,
-                    ),
-                    itemBuilder: (context, index) {
-                      return CustomCard(product: products[index]);
-                    },
-                  );
-                } else {
-                  return Center(child: Text('No products found.'));
-                }
-              },
-            ),
+                return GridView.builder(
+                  padding: EdgeInsets.only(
+                    top: 70.h,
+                    left: 10.w,
+                    right: 10.w,
+                    bottom: 80.h,
+                  ),
+                  clipBehavior: Clip.none,
+                  itemCount: products.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 1.4,
+                    crossAxisSpacing: 20.w,
+                    mainAxisSpacing: 100.h,
+                  ),
+                  itemBuilder: (context, index) {
+                    return CustomCard(product: products[index]);
+                  },
+                );
+              } else {
+                return Center(child: Text('No products found.'));
+              }
+            },
           ),
         ],
       ),
