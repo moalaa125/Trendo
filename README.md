@@ -25,10 +25,12 @@
 
 ## 📸 Screenshots
 
-| Home Screen | Home Screen 
-| Add Product | Add Product |
-| :---: | :---: | :---: |
+| Home Screen | Home Screen (Scrolled) |
+| :---: | :---: |
 | <img src="screenshots/home.PNG" width="250"> | <img src="screenshots/home2.PNG" width="250"> |
+
+| Add Product | Update Product |
+| :---: | :---: |
 | <img src="screenshots/add.PNG" width="250"> | <img src="screenshots/update.PNG" width="250"> |
 
 ---
