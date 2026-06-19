@@ -27,7 +27,8 @@
 
 | Home Screen | Add Product | Update Product |
 | :---: | :---: | :---: |
-| <img src="screenshots/home.PNG" width="250"> | <img src="screenshots/add.PNG" width="250"> | <img src="screenshots/update.PNG" width="250"> |
+| <img src="screenshots/home.PNG" width="250"> <img src="screenshots/home2.PNG" width="250"> |
+| <img src="screenshots/add.PNG" width="250"> | <img src="screenshots/update.PNG" width="250"> |
 
 ---
 
