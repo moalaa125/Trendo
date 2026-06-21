@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:store_app/screens/main_screen.dart';
-import 'package:store_app/screens/update_product_page.dart';
+import 'screens/main_screen.dart';
+import 'screens/update_product_page.dart';
 
 void main() {
   runApp(const StoreApp());
